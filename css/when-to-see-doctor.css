@@ -1,0 +1,394 @@
+/* 専門家に相談する目安ページのスタイル */
+
+/* 導入セクション */
+.intro-section {
+    margin-bottom: 40px;
+}
+
+.important-note {
+    background-color: #fff9e6;
+    border-left: 4px solid #f5a623;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.important-note h3 {
+    color: #f5a623;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.important-note h3 i {
+    margin-right: 10px;
+}
+
+/* 警告サインセクション */
+.warning-signs-section {
+    margin-bottom: 50px;
+}
+
+.warning-signs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.warning-sign {
+    display: flex;
+    gap: 20px;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sign-icon {
+    font-size: 36px;
+    color: #1E5B96;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(30, 91, 150, 0.1);
+    border-radius: 50%;
+}
+
+.sign-content {
+    flex: 1;
+}
+
+.sign-content h3 {
+    color: #1E5B96;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.sign-content ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.sign-content li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.emergency-note {
+    background-color: #ffe8e8;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.emergency-note p {
+    color: #d32f2f;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* 症状別セクション */
+.symptoms-specific-section {
+    margin-bottom: 50px;
+}
+
+.accordion {
+    margin-top: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    margin: 0;
+}
+
+.accordion-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.accordion-button:hover {
+    background-color: #f0f0f0;
+}
+
+.accordion-button::after {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s;
+}
+
+.accordion-button[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+.accordion-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-collapse.show {
+    max-height: 1000px;
+}
+
+.accordion-body {
+    padding: 20px;
+    background-color: white;
+}
+
+.accordion-note {
+    margin-top: 15px;
+    font-style: italic;
+    color: #666;
+}
+
+.accordion-note a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* 専門家選びセクション */
+.professionals-section {
+    margin-bottom: 50px;
+}
+
+.professionals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.professional-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.professional-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.professional-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #1E5B96;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.professional-card h3 {
+    color: #1E5B96;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.professional-card p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.professional-card h4 {
+    font-size: 16px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.professional-card ul {
+    padding-left: 20px;
+}
+
+.professional-card li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* 準備セクション */
+.preparation-section {
+    margin-bottom: 50px;
+}
+
+.preparation-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tip {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tip h3 {
+    color: #1E5B96;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.tip h3 i {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.tip p {
+    margin-bottom: 15px;
+}
+
+.tip ul {
+    padding-left: 20px;
+}
+
+.tip li {
+    margin-bottom: 8px;
+}
+
+/* よくある質問セクション */
+.faq-section {
+    margin-bottom: 50px;
+}
+
+.faq-list {
+    margin-top: 30px;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 25px;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.faq-item h3 {
+    color: #1E5B96;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.faq-item p {
+    margin-bottom: 15px;
+}
+
+.faq-item ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.faq-item li {
+    margin-bottom: 8px;
+}
+
+/* サイドバー特有のスタイル */
+.emergency-info {
+    background-color: #ffe8e8;
+}
+
+.emergency-info h3 {
+    color: #d32f2f;
+}
+
+.emergency-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.emergency-info li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.symptom-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #1E5B96;
+    border-radius: 30px;
+    color: #1E5B96;
+    background-color: transparent;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #1E5B96;
+    color: white;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .warning-sign {
+        flex-direction: column;
+    }
+    
+    .sign-icon {
+        margin-bottom: 15px;
+    }
+    
+    .professionals-grid, .preparation-tips {
+        grid-template-columns: 1fr;
+    }
+    
+    .preparation-tips {
+        gap: 20px;
+    }
+}
+
+/* 免責事項 */
+.disclaimer {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+    line-height: 1.4;
+}
