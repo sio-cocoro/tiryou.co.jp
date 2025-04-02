@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>症状一覧 | 体の不調改善ガイド</title>
+    <meta
+      name="description"
+      content="体の不調や痛みの症状一覧です。肩こり、腰痛、首の痛み、膝の痛み、頭痛など様々な症状の原因と対処法をご紹介します。"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all-symptoms.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1><a href="index.html">体の不調改善ガイド</a></h1>
+        </div>
+        <nav>
+          <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="index.html">ホーム</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn"
+                >症状から探す <i class="fas fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-content">
+                <a href="symptoms/shoulder.html">肩こり</a>
+                <a href="symptoms/back.html">腰痛</a>
+                <a href="symptoms/neck.html">首の痛み</a>
+                <a href="symptoms/knee.html">膝の痛み</a>
+                <a href="symptoms/headache.html">頭痛</a>
+              </div>
+            </li>
+            <li><a href="self-care.html">セルフケア</a></li>
+            <li><a href="when-to-see-doctor.html">専門家に相談する目安</a></li>
+            <li><a href="about.html">サイトについて</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-banner">
+      <div class="container">
+        <h1>症状一覧</h1>
+        <div class="breadcrumb">
+          <a href="index.html">ホーム</a> &gt;
+          <span>症状一覧</span>
+        </div>
+      </div>
+    </div>
+
+    <main class="container">
+      <section class="intro-section">
+        <h2>体の不調・痛みの症状について</h2>
+        <p>
+          体に痛みや不調を感じると、日常生活に支障をきたすことがあります。このページでは、よくある体の不調や痛みの症状について、その原因や対処法、専門家に相談すべきタイミングなどを紹介しています。
+        </p>
+        <p>
+          症状ごとに詳しいページをご用意していますので、気になる症状をクリックして詳細をご確認ください。自分でできるセルフケア方法も多数紹介していますが、症状が重い場合や長期間続く場合は、専門家への相談をおすすめします。
+        </p>
+
+        <div class="search-box">
+          <input type="text" id="symptom-search" placeholder="症状を検索..." />
+          <button id="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="symptoms-grid">
+        <article class="symptom-card" data-tags="肩こり,肩痛,こり,肩">
+          <a href="symptoms/shoulder.html" class="card-link">
+            <div class="symptom-image">
+              <img src="images/shoulder-pain.jpg" alt="肩こりの症状" />
+            </div>
+            <div class="symptom-content">
+              <h2>肩こり</h2>
+              <p class="symptom-description">
+                デスクワークや姿勢不良による首や肩周辺の筋肉の緊張や血行不良が主な原因です。放置すると頭痛やめまいなどの症状を引き起こすこともあります。
+              </p>
+              <div class="symptom-meta">
+                <span class="symptom-location"
+                  ><i class="fas fa-map-marker-alt"></i> 首や肩周辺</span
+                >
+                <span class="symptom-prevalence"
+                  ><i class="fas fa-users"></i> 非常に一般的</span
+                >
+              </div>
+              <span class="read-more"
+                >詳しく見る <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="symptom-card" data-tags="腰痛,腰の痛み,ぎっくり腰,腰">
+          <a href="symptoms/back.html" class="card-link">
+            <div class="symptom-image">
+              <img src="images/back-pain.jpg" alt="腰痛の症状" />
+            </div>
+            <div class="symptom-content">
+              <h2>腰痛</h2>
+              <p class="symptom-description">
+                姿勢の問題、筋力低下、過度の負荷、加齢による変化など様々な原因で発生します。急性と慢性があり、対処法も異なります。
+              </p>
+              <div class="symptom-meta">
+                <span class="symptom-location"
+                  ><i class="fas fa-map-marker-alt"></i> 腰部</span
+                >
+                <span class="symptom-prevalence"
+                  ><i class="fas fa-users"></i> 非常に一般的</span
+                >
+              </div>
+              <span class="read-more"
+                >詳しく見る <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </a>
+        </article>
+
+        <article
+          class="symptom-card"
+          data-tags="首の痛み,首こり,寝違え,スマホ首,テキストネック,首"
+        >
+          <a href="symptoms/neck.html" class="card-link">
+            <div class="symptom-image">
+              <img src="images/neck-pain.jpg" alt="首の痛みの症状" />
+            </div>
+            <div class="symptom-content">
+              <h2>首の痛み</h2>
+              <p class="symptom-description">
+                長時間のスマホ使用や不適切な姿勢、睡眠環境の問題などが主な原因です。寝違えやスマホ首などの症状が含まれます。
+              </p>
+              <div class="symptom-meta">
+                <span class="symptom-location"
+                  ><i class="fas fa-map-marker-alt"></i> 首</span
+                >
+                <span class="symptom-prevalence"
+                  ><i class="fas fa-users"></i> 一般的</span
+                >
+              </div>
+              <span class="read-more"
+                >詳しく見る <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </a>
+        </article>
+
+        <article
+          class="symptom-card"
+          data-tags="膝の痛み,膝痛,関節痛,変形性膝関節症,膝"
+        >
+          <a href="symptoms/knee.html" class="card-link">
+            <div class="symptom-image">
+              <img src="images/knee-pain.jpg" alt="膝の痛みの症状" />
+            </div>
+            <div class="symptom-content">
+              <h2>膝の痛み</h2>
+              <p class="symptom-description">
+                加齢による変化、過度の負荷や繰り返しの動作、急性の外傷などが原因で発生します。筋力強化や適切な動作が予防と改善に重要です。
+              </p>
+              <div class="symptom-meta">
+                <span class="symptom-location"
+                  ><i class="fas fa-map-marker-alt"></i> 膝関節</span
+                >
+                <span class="symptom-prevalence"
+                  ><i class="fas fa-users"></i> 一般的（特に高齢者）</span
+                >
+              </div>
+              <span class="read-more"
+                >詳しく見る <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </a>
+        </article>
+
+        <article
+          class="symptom-card"
+          data-tags="頭痛,片頭痛,緊張型頭痛,群発頭痛,頭"
+        >
+          <a href="symptoms/headache.html" class="card-link">
+            <div class="symptom-image">
+              <img src="images/headache.jpg" alt="頭痛の症状" />
+            </div>
+            <div class="symptom-content">
+              <h2>頭痛</h2>
+              <p class="symptom-description">
+                緊張型頭痛、片頭痛、群発頭痛など種類によって症状や対処法が異なります。ストレスや姿勢の問題が原因になることも多いです。
+              </p>
+              <div class="symptom-meta">
+                <span class="symptom-location"
+                  ><i class="fas fa-map-marker-alt"></i> 頭部</span
+                >
+                <span class="symptom-prevalence"
+                  ><i class="fas fa-users"></i> 非常に一般的</span
+                >
+              </div>
+              <span class="read-more"
+                >詳しく見る <i class="fas fa-arrow-right"></i
+              ></span>
+            </div>
+          </a>
+        </article>
+
+        <!-- 以下はサイト拡張時に追加予定のコンテンツのプレースホルダー -->
+        <article
+          class="symptom-card coming-soon"
+          data-tags="手首の痛み,腱鞘炎,手根管症候群,ドケルバン病,手首"
+        >
+          <div class="symptom-image">
+            <img src="images/wrist-pain.jpg" alt="手首の痛みの症状" />
+            <div class="coming-soon-badge">近日公開</div>
+          </div>
+          <div class="symptom-content">
+            <h2>手首の痛み</h2>
+            <p class="symptom-description">
+              腱鞘炎や手根管症候群などによる手首の痛みや不快感。パソコン作業や繰り返しの動作が原因になることが多いです。
+            </p>
+            <div class="symptom-meta">
+              <span class="symptom-location"
+                ><i class="fas fa-map-marker-alt"></i> 手首</span
+              >
+              <span class="symptom-prevalence"
+                ><i class="fas fa-users"></i> やや一般的</span
+              >
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="symptom-card coming-soon"
+          data-tags="足の痛み,足底筋膜炎,外反母趾,扁平足,足"
+        >
+          <div class="symptom-image">
+            <img src="images/foot-pain.jpg" alt="足の痛みの症状" />
+            <div class="coming-soon-badge">近日公開</div>
+          </div>
+          <div class="symptom-content">
+            <h2>足の痛み</h2>
+            <p class="symptom-description">
+              足底筋膜炎や外反母趾など、足のさまざまな部位に生じる痛みや不快感。靴選びや日常的なケアが重要です。
+            </p>
+            <div class="symptom-meta">
+              <span class="symptom-location"
+                ><i class="fas fa-map-marker-alt"></i> 足部</span
+              >
+              <span class="symptom-prevalence"
+                ><i class="fas fa-users"></i> 一般的</span
+              >
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="symptom-card coming-soon"
+          data-tags="肘の痛み,テニス肘,ゴルフ肘,上腕骨外側上顆炎,肘"
+        >
+          <div class="symptom-image">
+            <img src="images/elbow-pain.jpg" alt="肘の痛みの症状" />
+            <div class="coming-soon-badge">近日公開</div>
+          </div>
+          <div class="symptom-content">
+            <h2>肘の痛み</h2>
+            <p class="symptom-description">
+              テニス肘やゴルフ肘などの繰り返しの動作による肘周辺の痛み。スポーツや仕事でよく使う方に多く発生します。
+            </p>
+            <div class="symptom-meta">
+              <span class="symptom-location"
+                ><i class="fas fa-map-marker-alt"></i> 肘関節</span
+              >
+              <span class="symptom-prevalence"
+                ><i class="fas fa-users"></i> 一部で一般的</span
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="body-map-section">
+        <h2>体の部位から症状を探す</h2>
+        <p>下の体の図をクリックして、気になる部位の症状を確認できます。</p>
+
+        <div class="body-map-container">
+          <div class="body-map">
+            <img
+              src="images/body-map.jpg"
+              alt="体の部位マップ"
+              usemap="#bodymap"
+            />
+            <map name="bodymap">
+              <area
+                shape="circle"
+                coords="250,100,40"
+                alt="頭部"
+                href="symptoms/headache.html"
+                title="頭痛"
+              />
+              <area
+                shape="rect"
+                coords="210,150,290,180"
+                alt="首"
+                href="symptoms/neck.html"
+                title="首の痛み"
+              />
+              <area
+                shape="rect"
+                coords="180,180,320,220"
+                alt="肩"
+                href="symptoms/shoulder.html"
+                title="肩こり"
+              />
+              <area
+                shape="rect"
+                coords="210,280,290,350"
+                alt="腰"
+                href="symptoms/back.html"
+                title="腰痛"
+              />
+              <area
+                shape="circle"
+                coords="200,420,30"
+                alt="左膝"
+                href="symptoms/knee.html"
+                title="膝の痛み"
+              />
+              <area
+                shape="circle"
+                coords="300,420,30"
+                alt="右膝"
+                href="symptoms/knee.html"
+                title="膝の痛み"
+              />
+            </map>
+          </div>
+          <div class="body-map-legend">
+            <div class="legend-item">
+              <span class="legend-color head"></span>
+              <span class="legend-text"
+                >頭部 - <a href="symptoms/headache.html">頭痛</a></span
+              >
+            </div>
+            <div class="legend-item">
+              <span class="legend-color neck"></span>
+              <span class="legend-text"
+                >首 - <a href="symptoms/neck.html">首の痛み</a></span
+              >
+            </div>
+            <div class="legend-item">
+              <span class="legend-color shoulder"></span>
+              <span class="legend-text"
+                >肩 - <a href="symptoms/shoulder.html">肩こり</a></span
+              >
+            </div>
+            <div class="legend-item">
+              <span class="legend-color back"></span>
+              <span class="legend-text"
+                >腰 - <a href="symptoms/back.html">腰痛</a></span
+              >
+            </div>
+            <div class="legend-item">
+              <span class="legend-color knee"></span>
+              <span class="legend-text"
+                >膝 - <a href="symptoms/knee.html">膝の痛み</a></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <h2>よくある質問</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>複数の症状がある場合はどうすればよいですか？</h3>
+              <span class="toggle-icon"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                複数の症状が同時に現れることは珍しくありません。例えば、肩こりと首の痛み、頭痛は関連して発生することがよくあります。それぞれの症状ページをご確認いただき、セルフケア方法を試してみてください。ただし、複数の症状が同時に現れる場合や、症状が長期間続く場合は、専門家への相談をおすすめします。全身の状態を総合的に診断することで、根本的な原因を特定できることがあります。
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>症状が改善しない場合はどうすればよいですか？</h3>
+              <span class="toggle-icon"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                セルフケアを2週間程度続けても症状が改善しない場合や、症状が悪化する場合は、医療機関や専門家への相談をおすすめします。また、痛みが強い、日常生活に支障をきたす、しびれや脱力感などの神経症状を伴う場合も、早めに専門家に相談することが大切です。詳しくは<a
+                  href="when-to-see-doctor.html"
+                  >専門家に相談する目安</a
+                >のページをご覧ください。
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>どの専門家に相談すればよいですか？</h3>
+              <span class="toggle-icon"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                症状の種類や原因によって、相談すべき専門家は異なります。一般的には、以下のような選択肢があります：
+              </p>
+              <ul>
+                <li>
+                  <strong>整形外科医</strong
+                  >：骨、関節、筋肉、靭帯などの運動器系の疾患を専門とする医師
+                </li>
+                <li>
+                  <strong>整骨院・接骨院</strong
+                  >：柔道整復師が施術を行い、捻挫、打撲などの外傷や姿勢の問題による痛みに対応
+                </li>
+                <li>
+                  <strong>理学療法士</strong
+                  >：適切なエクササイズや姿勢改善のアドバイス
+                </li>
+                <li>
+                  <strong>マッサージ師・整体師</strong
+                  >：筋肉の緊張によるこりや痛みの緩和
+                </li>
+              </ul>
+              <p>
+                詳しくは<a href="when-to-see-doctor.html#choose-professional"
+                  >専門家の選び方</a
+                >をご覧ください。
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>痛みを我慢しながら普段通りに生活しても大丈夫ですか？</h3>
+              <span class="toggle-icon"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                痛みは体からの警告信号です。軽い痛みであれば、適切なセルフケアを行いながら普段通りの生活を続けることもできますが、痛みを無視して無理を続けると、症状が悪化したり、慢性化したりするリスクがあります。特に以下のような場合は注意が必要です：
+              </p>
+              <ul>
+                <li>痛みが強く、日常生活に支障をきたす</li>
+                <li>痛みが徐々に悪化している</li>
+                <li>痛みに加えて、しびれや脱力感などの神経症状がある</li>
+                <li>痛みが2週間以上続いている</li>
+              </ul>
+              <p>これらの症状がある場合は、専門家への相談をおすすめします。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="next-steps">
+      <div class="container">
+        <h2>セルフケアと専門家相談</h2>
+        <div class="next-grid">
+          <a href="self-care.html" class="next-card">
+            <div class="next-icon"><i class="fas fa-home"></i></div>
+            <h3>セルフケアガイド</h3>
+            <p>症状別の自宅でできるケア方法を詳しく紹介しています</p>
+          </a>
+          <a href="when-to-see-doctor.html" class="next-card">
+            <div class="next-icon"><i class="fas fa-user-md"></i></div>
+            <h3>専門家に相談する目安</h3>
+            <p>専門家への相談が必要な状況と選び方</p>
+          </a>
+          <a href="articles/daily-habits.html" class="next-card">
+            <div class="next-icon"><i class="fas fa-calendar-check"></i></div>
+            <h3>予防のための日常習慣</h3>
+            <p>体の不調を未然に防ぐための生活習慣のポイント</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>体の不調改善ガイド</h2>
+            <p>体の不調でお悩みの方に向けた情報サイト</p>
+          </div>
+          <div class="footer-links">
+            <h3>コンテンツ</h3>
+            <ul>
+              <li><a href="index.html">ホーム</a></li>
+              <li><a href="all-symptoms.html">症状一覧</a></li>
+              <li><a href="self-care.html">セルフケア</a></li>
+              <li><a href="when-to-see-doctor.html">専門家相談</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>サイト情報</h3>
+            <ul>
+              <li><a href="about.html">サイトについて</a></li>
+              <li><a href="privacy.html">プライバシーポリシー</a></li>
+              <li><a href="terms.html">利用規約</a></li>
+              <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 tiryou.co.jp All Rights Reserved.</p>
+          <p class="disclaimer">
+            ※当サイトの情報は一般的な知識の提供を目的としており、特定の症状に対する医学的アドバイスではありません。実際の症状がある場合は、必ず医師や専門家にご相談ください。
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      // 症状検索機能
+      document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.getElementById("symptom-search");
+        const searchButton = document.getElementById("search-button");
+        const symptomCards = document.querySelectorAll(".symptom-card");
+
+        function performSearch() {
+          const searchTerm = searchInput.value.toLowerCase();
+
+          symptomCards.forEach((card) => {
+            const tags = card.getAttribute("data-tags").toLowerCase();
+            const cardText = card.textContent.toLowerCase();
+
+            if (
+              tags.includes(searchTerm) ||
+              cardText.includes(searchTerm) ||
+              searchTerm === ""
+            ) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        }
+
+        searchButton.addEventListener("click", performSearch);
+
+        searchInput.addEventListener("keyup", function (event) {
+          if (event.key === "Enter") {
+            performSearch();
+          }
+        });
+
+        // FAQ アコーディオン機能
+        const faqItems = document.querySelectorAll(".faq-item");
+
+        faqItems.forEach((item) => {
+          const question = item.querySelector(".faq-question");
+          const answer = item.querySelector(".faq-answer");
+          const icon = item.querySelector(".toggle-icon i");
+
+          question.addEventListener("click", function () {
+            answer.classList.toggle("active");
+            icon.classList.toggle("fa-chevron-down");
+            icon.classList.toggle("fa-chevron-up");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,396 @@
+/* 症状一覧ページのスタイル */
+
+/* イントロセクション */
+.intro-section {
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+
+.intro-section h2 {
+    color: #1E5B96;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+
+/* 検索ボックス */
+.search-box {
+    display: flex;
+    max-width: 600px;
+    margin: 30px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#symptom-search {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #e0e0e0;
+    border-right: none;
+    border-radius: 50px 0 0 50px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#symptom-search:focus {
+    border-color: #1E5B96;
+}
+
+#search-button {
+    background-color: #1E5B96;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    cursor: pointer;
+    border-radius: 0 50px 50px 0;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #164b7e;
+}
+
+/* 症状カードグリッド */
+.symptoms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.symptom-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.symptom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.symptom-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.symptom-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.symptom-card:hover .symptom-image img {
+    transform: scale(1.05);
+}
+
+.coming-soon-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(30, 91, 150, 0.8);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.symptom-content {
+    padding: 20px;
+}
+
+.symptom-content h2 {
+    color: #1E5B96;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.symptom-description {
+    color: #555;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.6;
+}
+
+.symptom-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.symptom-location, .symptom-prevalence {
+    display: flex;
+    align-items: center;
+}
+
+.symptom-location i, .symptom-prevalence i {
+    margin-right: 5px;
+    color: #4CAF50;
+}
+
+.read-more {
+    color: #4CAF50;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.read-more i {
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.symptom-card:hover .read-more i {
+    transform: translateX(5px);
+}
+
+.coming-soon {
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+/* 体のマップセクション */
+.body-map-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.body-map-section h2 {
+    color: #1E5B96;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.body-map-section p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.body-map-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.body-map {
+    flex: 0 0 auto;
+    position: relative;
+    max-width: 100%;
+}
+
+.body-map img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.body-map-legend {
+    flex: 0 0 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.legend-color.head {
+    background-color: #ff7f50;
+}
+
+.legend-color.neck {
+    background-color: #6a5acd;
+}
+
+.legend-color.shoulder {
+    background-color: #20b2aa;
+}
+
+.legend-color.back {
+    background-color: #ff6347;
+}
+
+.legend-color.knee {
+    background-color: #4682b4;
+}
+
+.legend-text {
+    font-size: 16px;
+}
+
+.legend-text a {
+    color: #1E5B96;
+    text-decoration: underline;
+}
+
+/* FAQ セクション */
+.faq-section {
+    margin-bottom: 50px;
+}
+
+.faq-section h2 {
+    color: #1E5B96;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    color: #1E5B96;
+    font-size: 18px;
+    margin: 0;
+}
+
+.toggle-icon {
+    color: #4CAF50;
+    transition: transform 0.3s;
+}
+
+.faq-answer {
+    background-color: white;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.faq-answer.active {
+    max-height: 500px;
+    padding: 20px;
+}
+
+.faq-answer p {
+    margin-bottom: 15px;
+}
+
+.faq-answer ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.faq-answer li {
+    margin-bottom: 8px;
+}
+
+.faq-answer a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 992px) {
+    .symptoms-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+    .body-map-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .body-map-legend {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-section, .body-map-section {
+        padding: 30px 20px;
+    }
+    
+    .search-box {
+        max-width: 100%;
+    }
+    
+    .symptoms-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .symptom-image {
+        height: 180px;
+    }
+    
+    .symptom-content h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .symptoms-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .intro-section h2, .body-map-section h2, .faq-section h2 {
+        font-size: 22px;
+    }
+    
+    .faq-question h3 {
+        font-size: 16px;
+    }
+}

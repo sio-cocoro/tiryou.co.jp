@@ -1,0 +1,314 @@
+/* セルフケアページのスタイル */
+
+/* イントロセクション */
+.intro-section {
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+
+.intro-section h2 {
+    color: #1E5B96;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.important-note {
+    background-color: #fff9e6;
+    border-left: 4px solid #f5a623;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.important-note h3 {
+    color: #f5a623;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.important-note h3 i {
+    margin-right: 10px;
+}
+
+.important-note ul {
+    padding-left: 20px;
+}
+
+.important-note li {
+    margin-bottom: 8px;
+}
+
+.important-note a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* ナビゲーションカード */
+.self-care-navigation {
+    margin-bottom: 50px;
+}
+
+.self-care-navigation h2 {
+    color: #1E5B96;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nav-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.nav-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-icon {
+    font-size: 32px;
+    color: #1E5B96;
+    margin-bottom: 15px;
+}
+
+.nav-card h3 {
+    color: #1E5B96;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* セルフケアセクション */
+.care-section {
+    padding: 40px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    color: #1E5B96;
+    font-size: 24px;
+    margin: 0;
+}
+
+.more-link {
+    color: #4CAF50;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.more-link i {
+    margin-left: 8px;
+    transition: transform 0.3s;
+}
+
+.more-link:hover i {
+    transform: translateX(5px);
+}
+
+.care-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ケア方法のカード */
+.care-method {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.care-method h3 {
+    color: #1E5B96;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.method-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.method-image {
+    flex: 0 0 300px;
+}
+
+.method-image img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.method-steps,
+.method-description {
+    flex: 1;
+    min-width: 300px;
+}
+
+.method-steps h4,
+.method-description h4 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.method-steps ol,
+.method-description ol,
+.method-steps ul,
+.method-description ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.method-steps li,
+.method-description li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.tip {
+    font-style: italic;
+    color: #666;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.method-description strong {
+    color: #1E5B96;
+}
+
+/* 安全セクション */
+.safety-section {
+    background-color: #f0f8ff;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 50px 0;
+}
+
+.safety-section h2 {
+    color: #1E5B96;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.safety-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.safety-tips,
+.when-to-seek-help {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.safety-tips h3,
+.when-to-seek-help h3 {
+    color: #1E5B96;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.safety-tips ul,
+.when-to-seek-help ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.safety-tips li,
+.when-to-seek-help li {
+    margin-bottom: 10px;
+}
+
+.when-to-seek-help a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 992px) {
+    .method-image {
+        flex: 0 0 250px;
+    }
+    
+    .safety-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-section, .care-section, .safety-section {
+        padding: 30px 20px;
+    }
+    
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .section-header h2 {
+        margin-bottom: 15px;
+    }
+    
+    .nav-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .method-content {
+        flex-direction: column;
+    }
+    
+    .method-image {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .intro-section h2, .section-header h2, .safety-section h2 {
+        font-size: 22px;
+    }
+    
+    .care-method h3 {
+        font-size: 18px;
+    }
+    
+    .method-steps, .method-description {
+        min-width: 100%;
+    }
+}
